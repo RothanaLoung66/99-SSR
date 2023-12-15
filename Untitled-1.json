@@ -1,0 +1,23 @@
+{
+    "jakebecker.elixir-ls",
+        "espressif.esp-idf-extension",
+        "ms-iot.vscode-ros",
+        "franneck94.c-cpp-runner",
+        "xdebug.php-debug",
+        "job.amiga-debug-job",
+        "ms-dotnettools.vscode-dotnet-pack",
+        "scalameta.metals",
+        "haselerdev.aiquickfix"
+    
+    "recommendations": [
+        "jakebecker.elixir-ls",
+        "espressif.esp-idf-extension",
+        "ms-iot.vscode-ros",
+        "franneck94.c-cpp-runner",
+        "xdebug.php-debug",
+        "job.amiga-debug-job",
+        "ms-dotnettools.vscode-dotnet-pack",
+        "scalameta.metals",
+        "haselerdev.aiquickfix"
+    ]
+}

@@ -1,0 +1,45 @@
+
+;; Domain:     seriesstudio.uk.
+;; Exported:   2023-12-16 04:45:50
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+seriesstudio.uk	3600	IN	SOA	julio.ns.cloudflare.com. dns.cloudflare.com. 2045436855 10000 2400 604800 3600
+
+;; NS Records
+seriesstudio.uk.	86400	IN	NS	julio.ns.cloudflare.com.
+seriesstudio.uk.	86400	IN	NS	sloan.ns.cloudflare.com.
+
+;; CNAME Records
+seriesstudio.uk.	1	IN	CNAME	ipfs.cloudflare.com.
+
+;; MX Records
+seriesstudio.uk.	1	IN	MX	32 route3.mx.cloudflare.net.
+seriesstudio.uk.	1	IN	MX	74 route2.mx.cloudflare.net.
+seriesstudio.uk.	1	IN	MX	37 route1.mx.cloudflare.net.
+
+;; TXT Records
+_dmarc.seriesstudio.uk.	1	IN	TXT	"v=DMARC1;  p=none; rua=mailto:a8d2bc9ff58c4298aa700a8030677755@dmarc-reports.cloudflare.net"
+_dnslink.seriesstudio.uk.	1	IN	TXT	"dnslink=/ipns/onboarding.ipfs.cloudflare.com"
+seriesstudio.uk.	1	IN	TXT	"v=spf1 ip4:192.168.0.1 include:seriesstudio.uk ~all"
+seriesstudio.uk.	3600	IN	TXT	"google-site-verification=aCc8VlC7q5yyBxdidhx4CubYASfYrRkycl-o8XKBMtM"

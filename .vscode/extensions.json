@@ -1,0 +1,12 @@
+
+      "language": "python",
+      "source": "https://raw.githubusercontent.com/bitoai/bito-programming-assistant/master/extensions/linting.py"
+    },
+    {
+      "name": "Debugging",
+      "description": "Provides tools for debugging the user's code.",
+      "language": "python",
+      "source": "https://raw.githubusercontent.com/bitoai/bito-programming-assistant/master/extensions/debugging.py"
+    }
+  ]
+}

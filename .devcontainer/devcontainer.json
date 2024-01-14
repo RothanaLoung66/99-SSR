@@ -1,0 +1,19 @@
+{
+  "name": "devcontainer",
+  "image": "node:16.13.1",
+  "extensions": [
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh"
+  ],
+  "workspaceFolder": "/workspace",
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/tmp/ssh-agent.sock",
+    "DOCKER_HOST": "tcp://127.0.0.1:2376",
+    "DOCKER_CERT_PATH": "/certs",
+    "DOCKER_TLS_VERIFY": "1"
+  },
+  "forwardPorts": [
+    2222
+  ],
+  "postCreateCommand": "/bin/bash -c 'sleep 5 && /bin/bash -c \"echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc && source ~/.bashrc\"'"
+}
